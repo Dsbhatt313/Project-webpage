@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+ <head>
+<script>
+
+function processArray() {
+ let input = prompt("Enter numbers with semicolon for an array");
+let arr = input.split(";");
+ for (let i = 0; i < arr.length; i++) {
+ for (let j = i + 1; j < arr.length; j++) {
+ if (arr[i] < arr[j]) {
+ let temp = arr[i];
+ arr[i] = arr[j];
+ arr[j] = temp;
+ }
+ }
+ }
+ document.write("The sorted array is: " + arr);
+}
+ 
+
+</script>
+ <title>JavaScript Example</title>
+ </head>
+ <body>
+ <button onclick="processArray()">Process Array</button>
+ <script src="script.js"></script>
+ </body>
+</html>

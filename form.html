@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        legend {
+            background-color: gray;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 100px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            border: 4px solid #0c0c0c;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: #eeeeee;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #000000;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="/action.php">
+        <fieldset>
+            <legend><h1>Resgistration Form</h1></legend>
+            <br>
+            <div>
+            First name:
+            <br>
+            <input type="text" placeholder="First name">
+            <br>
+            <br>
+            Last name:
+            <br>
+            <input type="text" placeholder="Last name">
+            <br>
+            <br>
+            Email:
+            <br>
+            <input type="email" placeholder="eg: xyz@gmail.com">
+            <br>
+            <br>
+            Enter password:
+            <br>
+            <input type="password" placeholder="at least 12 characters">
+            <br>
+            <br>
+            Select your class:
+            <br>
+            <label for="101">
+            <input type="radio" value="Class XI" name="Class" id="101">Class XI
+            </label>
+            <label for="102">
+            <input type="radio" value="Class XII" name="Class" id="102">Class XII
+            </label>
+            <br>
+            <br>
+            Select your Subject:
+            <br>
+            <label for="maths">
+            <input type="checkbox" value="maths" name="Subject" id="101">Maths
+            </label>
+            <br>
+            <label for="Phy">
+            <input type="checkbox" value="Phy" name="Subject" id="102">Physics
+            </label>
+            <br>
+            <label for="Chem">
+            <input type="checkbox" value="Chem" name="Subject" id="103">Chemistry
+            </label>
+            <br>
+            <label for="Bio">
+            <input type="checkbox" value="Bio" name="Subject" id="104">Biology
+            </label>
+            <br>
+            <br>
+            Select your City:
+            <select name="city">
+            <option value="Delhi">Delhi</option>
+            <option value="Bombay">Bombay</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Surat">Surat</option>
+            </select>
+            <br>
+            <br>
+            Feedback
+            <br>
+            <textarea name="feedback" id="101" placeholder="use 100 characters
+            " rows="5"></textarea>
+            <br>
+            <br>
+            </div>
+            <footer>
+            <input type="Submit" value="Submit">
+            </footer>
+        </fieldset>
+    </form>
+</body>
+</html>

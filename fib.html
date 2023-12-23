@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+ <head>
+<script>
+
+function calculateFactorial() {
+ let num = prompt("Enter a number to calculate its factorial:");
+ let fact = 1;
+ while (num > 0) {
+ fact *= num;
+ num--;
+ }
+ document.write("The factorial of the number is: " + fact);
+}
+
+</script>
+ <title>JavaScript Example</title>
+ </head>
+ <body>
+ <button onclick="calculateFactorial()">Calculate Factorial</button>
+ 
+ <script src="script.js"></script>
+ </body>
+</html>
